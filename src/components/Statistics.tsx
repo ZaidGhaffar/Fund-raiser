@@ -5,14 +5,12 @@ interface StatisticProps {
   description: string
 }
 
-const Statistic: React.FC<StatisticProps> = ({ value, description }) => {
-  return (
-    <div className="flex flex-col gap-2">
-      <div className="text-4xl font-bold">{value}</div>
-      <p className="text-gray-600 text-sm">{description}</p>
-    </div>
-  )
-}
+const Statistic: React.FC<StatisticProps> = ({ value, description }) => (
+  <div className="flex flex-col gap-2">
+    <div className="text-4xl font-bold">{value}</div>
+    <p className="text-gray-600 text-sm">{description}</p>
+  </div>
+)
 
 export const Statistics: React.FC = () => {
   return (

@@ -10,17 +10,17 @@ const challenges: ChallengeCard[] = [
   {
     title: 'Limited Resources',
     description: 'Web3 startups often struggle to find the necessary resources and support to scale their projects effectively.',
-    imageUrl: '/placeholder.svg?height=200&width=300'
+    imageUrl: '/images/limited-resources.jpg'
   },
   {
     title: 'Lack of Expertise',
     description: 'Many founders lack the specialized knowledge required to navigate the complex Web3 landscape.',
-    imageUrl: '/placeholder.svg?height=200&width=300'
+    imageUrl: '/images/lack-expertise.jpg'
   },
   {
     title: 'Regulatory Challenges',
     description: 'The evolving regulatory environment poses significant challenges for Web3 startups, especially in emerging markets.',
-    imageUrl: '/placeholder.svg?height=200&width=300'
+    imageUrl: '/images/regulatory.jpg'
   }
 ]
 
