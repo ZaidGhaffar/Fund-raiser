@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigation } from './components/Navigation'
 import { Hero } from './components/Hero'
+import { OpportunitiesSection } from './components/OpportunitiesSection'
 import { Statistics } from './components/Statistics'
 import { Challenges } from './components/Challenges'
 import { ContactForm } from './components/ContactForm'
@@ -11,7 +12,8 @@ const App: React.FC = () => {
       <Navigation />
       <main>
         <Hero />
-        <div className="max-w-6xl mx-auto px-4">
+        <OpportunitiesSection />
+        <div className="container px-4">
           <Statistics />
           <Challenges />
         </div>
@@ -22,3 +24,4 @@ const App: React.FC = () => {
 }
 
 export default App
+

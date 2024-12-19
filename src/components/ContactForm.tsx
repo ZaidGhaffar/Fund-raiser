@@ -1,16 +1,59 @@
 import React, { FormEvent, useState } from 'react'
+import emailjs from '@emailjs/browser'
+
+interface FormData {
+  name: string
+  phoneNumber: string
+  interestedIn: string
+}
 
 export const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phoneNumber: '',
     interestedIn: ''
   })
+  const [status, setStatus] = useState<{
+    type: 'success' | 'error' | null
+    message: string
+  }>({
+    type: null,
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Add your form submission logic here
+    setIsSubmitting(true)
+    
+    try {
+      const templateParams = {
+        to_email: 'zaidghaffar.business@gmail.com', // Replace with your email
+        from_name: formData.name,
+        phone_number: formData.phoneNumber,
+        interested_in: formData.interestedIn,
+      }
+
+      await emailjs.send(
+        'service_a1p7xjz', // Replace with your EmailJS service ID
+        'template_acowqw9', // Replace with your EmailJS template ID
+        templateParams,
+        'R9ZW9yL7ykNOmY-8K' // Replace with your EmailJS public key
+      )
+
+      setStatus({
+        type: 'success',
+        message: 'Thank you for your submission! We will contact you soon.'
+      })
+      setFormData({ name: '', phoneNumber: '', interestedIn: '' })
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: 'Something went wrong. Please try again later.'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -52,10 +95,20 @@ export const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-[#0A0B1C] text-white py-2 rounded-md hover:bg-opacity-90 transition-colors"
+          disabled={isSubmitting}
+          className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Submit
+          {isSubmitting ? 'Submitting...' : 'Submit'}
         </button>
+        {status.type && (
+          <div
+            className={`p-4 rounded-md ${
+              status.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+            }`}
+          >
+            {status.message}
+          </div>
+        )}
       </form>
     </section>
   )
