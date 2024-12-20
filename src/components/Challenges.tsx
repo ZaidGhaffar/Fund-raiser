@@ -1,5 +1,5 @@
 import React from 'react'
-
+import VendorCart from '../assets/Vendor-cart.jpg'
 interface ChallengeCard {
   title: string
   description: string
@@ -10,7 +10,7 @@ const challenges: ChallengeCard[] = [
   {
     title: 'Food Selling cart shop',
     description: 'Web3 startups often struggle to find the necessary resources and support to scale their projects effectively.',
-    imageUrl: 'src/assets/Vendor-cart.jpg'
+    imageUrl: 'public/Vendor-cart.jpg'
   },
   {
     title: 'Lack of Expertise',
