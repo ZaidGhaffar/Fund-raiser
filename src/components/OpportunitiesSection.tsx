@@ -1,4 +1,5 @@
 import React from 'react'
+import petrolStationImage from '../assets/petrol-station-3.webp'
 
 export const OpportunitiesSection: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const OpportunitiesSection: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="rounded-lg overflow-hidden">
               <img
-                src="public\petrol-station-3.webp"
+                src={petrolStationImage}
                 alt="Gas Station"
                 className="w-full h-auto object-cover"
               />
