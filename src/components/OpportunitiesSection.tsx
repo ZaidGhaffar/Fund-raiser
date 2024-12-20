@@ -25,7 +25,7 @@ export const OpportunitiesSection: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="rounded-lg overflow-hidden">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="src\assets\petrol-station-3.webp"
                 alt="Gas Station"
                 className="w-full h-auto object-cover"
               />

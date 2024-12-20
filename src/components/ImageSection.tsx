@@ -8,7 +8,7 @@ export const ImageSection: React.FC = () => {
           <div className="mt-10 lg:mt-0">
             <img
               className="rounded-lg shadow-xl"
-              src="/placeholder.svg?height=400&width=600"
+              src="src\assets\petrol-station-3.webp"
               alt="Web3 Accelerator"
             />
           </div>

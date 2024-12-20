@@ -88,9 +88,9 @@ export const ContactForm: React.FC = () => {
             required
           >
             <option value="">Select your interest</option>
-            <option value="web3">Web3 Development</option>
-            <option value="blockchain">Blockchain</option>
-            <option value="defi">DeFi</option>
+            <option value="Petrol-Pump-Venture-Investment">Petrol Pump Venture Investment</option>
+            <option value="Food Shop Investment">Food Shop Investment</option>
+            <option value="AI-Powered-Phone-Calling-Assistant">AI Powered Phone Calling Assistant</option>
           </select>
         </div>
         <button

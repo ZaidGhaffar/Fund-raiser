@@ -8,19 +8,19 @@ interface ChallengeCard {
 
 const challenges: ChallengeCard[] = [
   {
-    title: 'Limited Resources',
+    title: 'Food Selling cart shop',
     description: 'Web3 startups often struggle to find the necessary resources and support to scale their projects effectively.',
-    imageUrl: '/images/limited-resources.jpg'
+    imageUrl: 'src\\assets\\Vendor-cart.jpg'
   },
   {
     title: 'Lack of Expertise',
     description: 'Many founders lack the specialized knowledge required to navigate the complex Web3 landscape.',
-    imageUrl: '/images/lack-expertise.jpg'
+    imageUrl: 'src\\assets\\software.jpg'
   },
   {
     title: 'Regulatory Challenges',
     description: 'The evolving regulatory environment poses significant challenges for Web3 startups, especially in emerging markets.',
-    imageUrl: '/images/regulatory.jpg'
+    imageUrl: 'src\\assets\\business-management-banner.webp'
   }
 ]
 
