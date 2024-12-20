@@ -10,17 +10,17 @@ const challenges: ChallengeCard[] = [
   {
     title: 'Food Selling cart shop',
     description: 'Web3 startups often struggle to find the necessary resources and support to scale their projects effectively.',
-    imageUrl: 'src\\assets\\Vendor-cart.jpg'
+    imageUrl: 'src/assets/Vendor-cart.jpg'
   },
   {
     title: 'Lack of Expertise',
     description: 'Many founders lack the specialized knowledge required to navigate the complex Web3 landscape.',
-    imageUrl: 'src\\assets\\software.jpg'
+    imageUrl: 'src/assets/software.jpg'
   },
   {
     title: 'Regulatory Challenges',
     description: 'The evolving regulatory environment poses significant challenges for Web3 startups, especially in emerging markets.',
-    imageUrl: 'src\\assets\\business-management-banner.webp'
+    imageUrl: 'src/assets/business-management-banner.webp'
   }
 ]
 
