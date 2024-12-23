@@ -10,7 +10,7 @@ const challenges: ChallengeCard[] = [
   {
     title: 'Food Selling cart shop',
     description: 'Web3 startups often struggle to find the necessary resources and support to scale their projects effectively.',
-    imageUrl: 'public/Vendor-cart.jpg'
+    imageUrl : VendorCart
   },
   {
     title: 'Lack of Expertise',

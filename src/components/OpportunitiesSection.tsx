@@ -34,7 +34,7 @@ export const OpportunitiesSection: React.FC = () => {
             
             <div className="space-y-12">
               <p className="text-gray-700 text-lg">
-                Indosian lacks a specialised Web3 Accelerator to help scale protocols, networks and communities.
+                  Ready to invest in Petrol Pump. A High-Yield Joint Venture Opportunity in Pakistan
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -59,7 +59,7 @@ export const OpportunitiesSection: React.FC = () => {
                   <span className="text-gray-700">Inadequate Community Engagement</span>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Indonesia has an extremely limited number of specialised Web3 Accelerators
+                  Be part of a joint investment opportunity designed to modernize and scale petrol stations in Pakistan, delivering consistent returns for our partners
                 </p>
               </div>
             </div>
