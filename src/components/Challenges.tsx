@@ -1,5 +1,8 @@
 import React from 'react'
 import VendorCart from '../assets/Vendor-cart.jpg'
+import Software from '../assets/software.jpg'
+import Businessmangment from '../assets/business-management-banner.webp'
+
 interface ChallengeCard {
   title: string
   description: string
@@ -15,12 +18,12 @@ const challenges: ChallengeCard[] = [
   {
     title: 'Lack of Expertise',
     description: 'Many founders lack the specialized knowledge required to navigate the complex Web3 landscape.',
-    imageUrl: 'src/assets/software.jpg'
+    imageUrl: Software
   },
   {
     title: 'Regulatory Challenges',
     description: 'The evolving regulatory environment poses significant challenges for Web3 startups, especially in emerging markets.',
-    imageUrl: 'src/assets/business-management-banner.webp'
+    imageUrl: Businessmangment
   }
 ]
 
